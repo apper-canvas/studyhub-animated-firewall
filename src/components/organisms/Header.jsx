@@ -32,7 +32,7 @@ const Header = ({ title, onMenuClick, courses = [], onAddAssignment }) => {
             </div>
           </div>
           
-          <div className="flex items-center gap-3">
+<div className="flex items-center gap-3">
             <Button
               variant="primary"
               size="sm"
@@ -50,6 +50,16 @@ const Header = ({ title, onMenuClick, courses = [], onAddAssignment }) => {
               className="p-2 sm:hidden"
             >
               <ApperIcon name="Plus" className="h-4 w-4" />
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => window.location.href = '/study-timer'}
+              className="p-2"
+              title="Study Timer"
+            >
+              <ApperIcon name="Clock" className="h-5 w-5" />
             </Button>
             
             <Button

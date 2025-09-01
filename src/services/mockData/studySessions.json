@@ -1,0 +1,35 @@
+[
+  {
+    "Id": 1,
+    "type": "study",
+    "plannedDuration": 25,
+    "actualDuration": 25,
+    "startTime": "2024-01-15T09:00:00Z",
+    "endTime": "2024-01-15T09:25:00Z",
+    "completed": true,
+    "createdAt": "2024-01-15T09:00:00Z",
+    "updatedAt": "2024-01-15T09:25:00Z"
+  },
+  {
+    "Id": 2,
+    "type": "break",
+    "plannedDuration": 5,
+    "actualDuration": 5,
+    "startTime": "2024-01-15T09:25:00Z",
+    "endTime": "2024-01-15T09:30:00Z",
+    "completed": true,
+    "createdAt": "2024-01-15T09:25:00Z",
+    "updatedAt": "2024-01-15T09:30:00Z"
+  },
+  {
+    "Id": 3,
+    "type": "study",
+    "plannedDuration": 25,
+    "actualDuration": 20,
+    "startTime": "2024-01-15T10:00:00Z",
+    "endTime": "2024-01-15T10:20:00Z",
+    "completed": false,
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-01-15T10:20:00Z"
+  }
+]

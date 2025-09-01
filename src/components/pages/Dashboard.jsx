@@ -1,32 +1,32 @@
 import React, { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import Layout from "@/components/organisms/Layout";
-import StatCard from "@/components/molecules/StatCard";
-import CourseCard from "@/components/molecules/CourseCard";
-import AssignmentItem from "@/components/molecules/AssignmentItem";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
-import Empty from "@/components/ui/Empty";
-import Card from "@/components/atoms/Card";
-import Button from "@/components/atoms/Button";
-import ApperIcon from "@/components/ApperIcon";
 import { useCourses } from "@/hooks/useCourses";
 import { useAssignments } from "@/hooks/useAssignments";
-import { format, isToday, isTomorrow, isThisWeek } from "date-fns";
+import { useStudySessions } from "@/hooks/useStudySessions";
+import { format, isThisWeek, isToday, isTomorrow } from "date-fns";
 import { toast } from "react-toastify";
-
+import ApperIcon from "@/components/ApperIcon";
+import Layout from "@/components/organisms/Layout";
+import AssignmentItem from "@/components/molecules/AssignmentItem";
+import CourseCard from "@/components/molecules/CourseCard";
+import StatCard from "@/components/molecules/StatCard";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
+import Courses from "@/components/pages/Courses";
+import Button from "@/components/atoms/Button";
+import Card from "@/components/atoms/Card";
 const Dashboard = () => {
   const navigate = useNavigate();
   const { courses, loading: coursesLoading, error: coursesError } = useCourses();
-  const { 
-    assignments, 
-    loading: assignmentsLoading, 
-    error: assignmentsError,
-    createAssignment,
-    updateAssignment,
-    deleteAssignment
-  } = useAssignments();
+  const { assignments, loading: assignmentsLoading, error: assignmentsError, createAssignment, updateAssignment, deleteAssignment } = useAssignments();
+  const { getStudyStats } = useStudySessions();
+  
+  // Get study stats
+  const studyStats = getStudyStats();
 
+// Loading state - will be handled later in the component
+  
   const dashboardData = useMemo(() => {
     if (coursesLoading || assignmentsLoading) return null;
 
@@ -142,7 +142,7 @@ const Dashboard = () => {
       courses={courses}
       onAddAssignment={handleAddAssignment}
     >
-      <div className="space-y-6">
+<div className="space-y-6">
         {/* Overview Stats */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <StatCard
@@ -171,11 +171,13 @@ const Dashboard = () => {
           />
           
           <StatCard
-            title="Due Today"
-            value={dashboardData.todaysAssignments.length}
-            icon="Calendar"
-            color={dashboardData.todaysAssignments.length > 0 ? "warning" : "success"}
-            onClick={() => navigate("/assignments")}
+            title="Study Sessions"
+            value={studyStats.todayCompletedSessions}
+            icon="Clock"
+            color="info"
+            trend={studyStats.todayStudyTime > 0 ? "up" : "down"}
+            trendValue={`${Math.floor(studyStats.todayStudyTime / 60)}h ${studyStats.todayStudyTime % 60}m today`}
+            onClick={() => navigate("/study-timer")}
           />
         </div>
 
