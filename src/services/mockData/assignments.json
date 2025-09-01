@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "title": "Final Project - Web Application",
+    "courseId": 1,
+    "dueDate": "2024-12-15T23:59:00",
+    "priority": "high",
+    "status": "in-progress",
+    "grade": null,
+    "weight": 30,
+    "description": "Develop a full-stack web application using React and Node.js with database integration."
+  },
+  {
+    "Id": 2,
+    "title": "Algorithm Analysis Report",
+    "courseId": 2,
+    "dueDate": "2024-11-28T23:59:00",
+    "priority": "high",
+    "status": "pending",
+    "grade": null,
+    "weight": 25,
+    "description": "Analyze time and space complexity of various sorting algorithms with empirical testing."
+  },
+  {
+    "Id": 3,
+    "title": "Database Design Assignment",
+    "courseId": 3,
+    "dueDate": "2024-11-25T23:59:00",
+    "priority": "medium",
+    "status": "pending",
+    "grade": null,
+    "weight": 20,
+    "description": "Design and implement a normalized database schema for an e-commerce system."
+  },
+  {
+    "Id": 4,
+    "title": "Unit Testing Implementation",
+    "courseId": 4,
+    "dueDate": "2024-11-30T23:59:00",
+    "priority": "medium",
+    "status": "in-progress",
+    "grade": null,
+    "weight": 15,
+    "description": "Write comprehensive unit tests for the existing codebase using Jest framework."
+  },
+  {
+    "Id": 5,
+    "title": "Matrix Operations Quiz",
+    "courseId": 5,
+    "dueDate": "2024-11-22T14:00:00",
+    "priority": "high",
+    "status": "pending",
+    "grade": null,
+    "weight": 10,
+    "description": "Online quiz covering matrix multiplication, determinants, and eigenvalues."
+  },
+  {
+    "Id": 6,
+    "title": "Midterm Exam Review",
+    "courseId": 1,
+    "dueDate": "2024-10-15T10:00:00",
+    "priority": "low",
+    "status": "completed",
+    "grade": 92,
+    "weight": 20,
+    "description": "Comprehensive review covering object-oriented programming and design patterns."
+  },
+  {
+    "Id": 7,
+    "title": "Binary Tree Implementation",
+    "courseId": 2,
+    "dueDate": "2024-10-20T23:59:00",
+    "priority": "medium",
+    "status": "completed",
+    "grade": 88,
+    "weight": 15,
+    "description": "Implement binary search tree with insert, delete, and search operations."
+  },
+  {
+    "Id": 8,
+    "title": "SQL Query Optimization",
+    "courseId": 3,
+    "dueDate": "2024-10-25T23:59:00",
+    "priority": "medium",
+    "status": "completed",
+    "grade": 85,
+    "weight": 15,
+    "description": "Optimize existing SQL queries and create efficient indexes for better performance."
+  },
+  {
+    "Id": 9,
+    "title": "Requirements Analysis Document",
+    "courseId": 4,
+    "dueDate": "2024-10-30T23:59:00",
+    "priority": "high",
+    "status": "completed",
+    "grade": 90,
+    "weight": 20,
+    "description": "Create detailed requirements analysis for a student management system."
+  },
+  {
+    "Id": 10,
+    "title": "Vector Spaces Problem Set",
+    "courseId": 5,
+    "dueDate": "2024-11-01T23:59:00",
+    "priority": "low",
+    "status": "completed",
+    "grade": 78,
+    "weight": 12,
+    "description": "Solve problems related to linear independence, basis, and dimension."
+  }
+]

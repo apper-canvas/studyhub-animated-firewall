@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "name": "Advanced Computer Science",
+    "code": "CS 401",
+    "instructor": "Dr. Sarah Johnson",
+    "schedule": ["MWF 10:00-11:00", "T 14:00-16:00"],
+    "credits": 4,
+    "color": "#2563eb",
+    "semester": "Fall 2024",
+    "currentGrade": 87.5,
+    "assignmentCount": 8
+  },
+  {
+    "Id": 2,
+    "name": "Data Structures & Algorithms",
+    "code": "CS 320",
+    "instructor": "Prof. Michael Chen",
+    "schedule": ["TTH 13:00-14:30"],
+    "credits": 3,
+    "color": "#7c3aed",
+    "semester": "Fall 2024",
+    "currentGrade": 91.2,
+    "assignmentCount": 6
+  },
+  {
+    "Id": 3,
+    "name": "Database Management Systems",
+    "code": "CS 380",
+    "instructor": "Dr. Emily Rodriguez",
+    "schedule": ["MWF 14:00-15:00"],
+    "credits": 3,
+    "color": "#059669",
+    "semester": "Fall 2024",
+    "currentGrade": 84.3,
+    "assignmentCount": 5
+  },
+  {
+    "Id": 4,
+    "name": "Software Engineering",
+    "code": "CS 350",
+    "instructor": "Dr. David Wilson",
+    "schedule": ["TTH 10:00-11:30"],
+    "credits": 4,
+    "color": "#dc2626",
+    "semester": "Fall 2024",
+    "currentGrade": 89.7,
+    "assignmentCount": 7
+  },
+  {
+    "Id": 5,
+    "name": "Linear Algebra",
+    "code": "MATH 240",
+    "instructor": "Prof. Lisa Anderson",
+    "schedule": ["MWF 09:00-10:00"],
+    "credits": 3,
+    "color": "#ea580c",
+    "semester": "Fall 2024",
+    "currentGrade": 76.8,
+    "assignmentCount": 4
+  }
+]

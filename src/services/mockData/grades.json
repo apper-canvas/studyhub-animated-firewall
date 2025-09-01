@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "courseId": 1,
+    "assignmentId": 6,
+    "score": 92,
+    "total": 100,
+    "weight": 20,
+    "category": "exam"
+  },
+  {
+    "Id": 2,
+    "courseId": 2,
+    "assignmentId": 7,
+    "score": 88,
+    "total": 100,
+    "weight": 15,
+    "category": "assignment"
+  },
+  {
+    "Id": 3,
+    "courseId": 3,
+    "assignmentId": 8,
+    "score": 85,
+    "total": 100,
+    "weight": 15,
+    "category": "assignment"
+  },
+  {
+    "Id": 4,
+    "courseId": 4,
+    "assignmentId": 9,
+    "score": 90,
+    "total": 100,
+    "weight": 20,
+    "category": "project"
+  },
+  {
+    "Id": 5,
+    "courseId": 5,
+    "assignmentId": 10,
+    "score": 78,
+    "total": 100,
+    "weight": 12,
+    "category": "homework"
+  }
+]
