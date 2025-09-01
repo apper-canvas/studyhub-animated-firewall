@@ -78,19 +78,6 @@ const MobileSidebar = ({ isOpen, onClose }) => {
               ))}
             </nav>
             
-            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200">
-              <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-lg p-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <ApperIcon name="Target" className="h-5 w-5 text-primary-600" />
-                  <span className="text-sm font-medium text-gray-900">Study Goal</span>
-                </div>
-                <p className="text-xs text-gray-600 mb-3">Maintain a 3.5+ GPA this semester</p>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-gradient-to-r from-primary-500 to-secondary-500 h-2 rounded-full w-3/4"></div>
-                </div>
-                <p className="text-xs text-gray-500 mt-1">Current: 3.4 GPA</p>
-              </div>
-            </div>
           </motion.div>
         </>
       )}
