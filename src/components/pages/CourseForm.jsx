@@ -17,12 +17,13 @@ const CourseForm = () => {
   
   const { courses, createCourse, updateCourse, loading } = useCourses();
   
-  const [formData, setFormData] = useState({
+const [formData, setFormData] = useState({
     name: "",
     code: "",
     instructor: "",
     credits: "",
     semester: "",
+    department: "",
     description: ""
   });
   
@@ -34,12 +35,13 @@ const CourseForm = () => {
     if (isEditing && courses.length > 0) {
       const course = courses.find(c => c.Id === parseInt(id));
       if (course) {
-        setFormData({
+setFormData({
           name: course.name || "",
           code: course.code || "",
           instructor: course.instructor || "",
           credits: course.credits?.toString() || "",
           semester: course.semester || "",
+          department: course.department || "",
           description: course.description || ""
         });
       }
@@ -89,6 +91,9 @@ const CourseForm = () => {
     if (!formData.semester) {
       newErrors.semester = "Semester is required";
     }
+if (!formData.department.trim()) {
+      newErrors.department = "Department is required";
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -105,7 +110,7 @@ const CourseForm = () => {
     setSubmitting(true);
     
     try {
-      const courseData = {
+const courseData = {
         ...formData,
         credits: parseInt(formData.credits),
         currentGrade: isEditing ? 
@@ -196,7 +201,7 @@ const CourseForm = () => {
               required
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Select
                 label="Credits"
                 value={formData.credits}
@@ -215,6 +220,28 @@ const CourseForm = () => {
                 required
               />
             </div>
+
+            <Select
+              label="Department"
+              value={formData.department}
+              onChange={(e) => handleChange("department", e.target.value)}
+              options={[
+                { value: "Computer Science", label: "Computer Science" },
+                { value: "Mathematics", label: "Mathematics" },
+                { value: "Engineering", label: "Engineering" },
+                { value: "Physics", label: "Physics" },
+                { value: "Chemistry", label: "Chemistry" },
+                { value: "Biology", label: "Biology" },
+                { value: "Business", label: "Business" },
+                { value: "Psychology", label: "Psychology" },
+                { value: "History", label: "History" },
+                { value: "English", label: "English" },
+                { value: "Art", label: "Art" },
+                { value: "Music", label: "Music" }
+              ]}
+              error={errors.department}
+              required
+            />
 
             <Textarea
               label="Description (Optional)"

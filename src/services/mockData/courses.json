@@ -8,6 +8,7 @@
     "credits": 4,
     "color": "#2563eb",
     "semester": "Fall 2024",
+    "department": "Computer Science",
     "currentGrade": 87.5,
     "assignmentCount": 8
   },
@@ -20,6 +21,7 @@
     "credits": 3,
     "color": "#7c3aed",
     "semester": "Fall 2024",
+    "department": "Computer Science",
     "currentGrade": 91.2,
     "assignmentCount": 6
   },
@@ -32,6 +34,7 @@
     "credits": 3,
     "color": "#059669",
     "semester": "Fall 2024",
+    "department": "Computer Science",
     "currentGrade": 84.3,
     "assignmentCount": 5
   },
@@ -44,6 +47,7 @@
     "credits": 4,
     "color": "#dc2626",
     "semester": "Fall 2024",
+    "department": "Computer Science",
     "currentGrade": 89.7,
     "assignmentCount": 7
   },
@@ -56,6 +60,7 @@
     "credits": 3,
     "color": "#ea580c",
     "semester": "Fall 2024",
+    "department": "Mathematics",
     "currentGrade": 76.8,
     "assignmentCount": 4
   }

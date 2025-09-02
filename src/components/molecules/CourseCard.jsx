@@ -31,8 +31,11 @@ const CourseCard = ({ course, onClick }) => {
             ></div>
             <h3 className="font-semibold text-lg text-gray-900">{course.name}</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">{course.code}</p>
+<p className="text-sm text-gray-600 mb-2">{course.code}</p>
           <p className="text-sm text-gray-500">{course.instructor}</p>
+          {course.department && (
+            <p className="text-xs text-gray-400 mt-1">{course.department}</p>
+          )}
         </div>
         <div className="text-right">
           <div className={cn("text-2xl font-bold", getGradeColor(course.currentGrade))}>

@@ -30,7 +30,7 @@ try {
     }
   },
 
-  async create(courseData) {
+async create(courseData) {
     await delay(400);
     // Future: Replace with ApperClient.createRecord('course_c', {records: [...]})
     try {
@@ -52,7 +52,7 @@ try {
     await delay(300);
     // Future: Replace with ApperClient.updateRecord('course_c', {records: [...]})
     try {
-      const index = courses.findIndex(c => c.Id === parseInt(id));
+const index = courses.findIndex(c => c.Id === parseInt(id));
       if (index !== -1) {
         courses[index] = { ...courses[index], ...courseData };
         return { ...courses[index] };
