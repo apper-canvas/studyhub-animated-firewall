@@ -58,7 +58,7 @@ const CourseCard = ({ course, onClick }) => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2 text-sm text-gray-600">
           <ApperIcon name="Clock" className="h-4 w-4" />
-          <span>{course.schedule.join(", ")}</span>
+<span>{course.schedule?.join(", ") || "No schedule available"}</span>
         </div>
         <Badge variant="default">
           {course.assignmentCount} assignments
