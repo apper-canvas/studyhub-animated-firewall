@@ -10,8 +10,8 @@ export const courseService = {
   async getAll() {
     await delay(300);
     // Future: Replace with ApperClient.fetchRecords('course_c', {fields: [...]})
-    try {
-      return [...courses];
+try {
+      return [...coursesData, ...courses.filter(c => !coursesData.find(original => original.Id === c.Id))];
     } catch (error) {
       console.error("Error fetching courses:", error);
       throw new Error("Failed to load courses");
